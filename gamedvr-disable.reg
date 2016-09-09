@@ -1,0 +1,14 @@
+﻿Windows Registry Editor Version 5.00
+
+; http://www.pcgamesn.com/how-to-turn-off-gamedvr-windows-10
+; https://www.reddit.com/r/GrandTheftAutoV_PC/comments/4c7jzd/regedit_how_to_disable_dvr_windows_10_game/
+; http://www.tenforums.com/tutorials/51180-game-dvr-game-bar-enable-disable-windows-10-a.html
+
+[HKEY_CURRENT_USER\System\GameConfigStore]
+"GameDVR_Enabled"=dword:00000000
+
+[HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\GameDVR]
+"AppCaptureEnabled"=dword:00000000
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\GameDVR]
+"AllowgameDVR"=dword:00000000
